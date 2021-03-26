@@ -1,0 +1,15 @@
+<div class="page-container">
+  <div class="content">
+    <div class="item" *ngFor="let item of items">
+      <div class="item-image">
+        <div class="item-remove-button">
+          <i class="material-icons">delete</i>
+        </div>
+      </div>
+      <div class="item-text">{{item.title}} - {{item.subtitle}}</div>
+      <div class="item-add-button">
+        <i class="material-icons">add</i>
+      </div>
+    </div>
+  </div>
+</div>

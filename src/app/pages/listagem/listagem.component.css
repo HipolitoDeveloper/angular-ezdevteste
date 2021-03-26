@@ -1,0 +1,75 @@
+.page-container{
+  font-family: 'Calibri', serif;
+  background-color: white;
+  height: 100%;
+}
+
+.item{
+  height:100px;
+  margin-left: 40px;
+  border-style: solid;
+  border-width: 1px 0 1px 0 ;
+  border-color: #A7C957;
+  display: flex;
+  align-items: center;
+}
+
+.item .item-remove-button i{
+  color:white
+}
+
+.item .item-image {
+  height: 80px;
+  width: 80px;
+  border-radius: 10px;
+  background-color:#BAD175;
+}
+
+.item-image .item-remove-button{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+  background-color: #A7C957;
+  margin-top: -10px;
+  margin-left: 25px
+}
+
+.item .item-text {
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #6A994E;
+}
+
+.item .item-add-button {
+  height: 90px;
+  width: 60px;
+  border-style: solid;
+  border-color: #A7C957;
+  border-radius: 20px 0 0 20px;
+  background-color: #A7C957;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -1px -2px 5px #6A994E;
+  position: absolute;
+  right: 0;
+
+}
+
+.item .item-add-button:hover {
+  background-color: rgba(167, 201, 87, 0.5);
+  border:none;
+
+}
+
+.item .item-add-button i {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+

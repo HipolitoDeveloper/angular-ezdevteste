@@ -1,0 +1,163 @@
+.page-container {
+  font-family: 'Calibri', serif;
+  background-color: white;
+}
+
+
+.grid-container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.grid-content {
+  height: 100%;
+  width: 80%;
+}
+
+.grid-item {
+  background-color: #A7C957;
+  margin-left: 20px;
+  height: 80%;
+  width: 100%;
+  border-radius:20px;
+}
+
+.top{
+  height: 60%;
+  display:flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.top title{
+
+}
+
+.bottom{
+  border-radius:20px;
+  height: 40%;
+  background-color: white;
+  color:#A7C957;
+}
+
+.bottom .main-information {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.bottom .main-information div {
+  margin:10px 5px 0 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.bottom .summary-information {
+  color:rgba(167, 201, 87, 0.9);
+  margin:10px 5px 0 5px;
+  font-size: 15px;
+}
+
+.chosen-item{
+  padding-top:40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.chosen-item .chosen-item-content{
+  background-color: white;
+  border-radius:20px;
+  border-style: solid;
+  border-width: 5px 1px 1px 5px;
+  border-color:#6A994E;
+  width: 30%;
+  height: 100%;
+}
+
+.chosen-item-content .chosen-item-title{
+  height: 150px;
+  width: 150px;
+  margin-top: -20px;
+  margin-left:-25px;
+  border-radius: 100%;
+  background-color: #6A994E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+
+.chosen-item-content .chosen-item-bottom{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-left:3px;
+}
+
+.chosen-item-bottom .chosen-item-description {
+  color:#A7C957;
+  font-weight: bold;
+}
+
+.chosen-item-bottom .chosen-item-button {
+  padding-top: 15px;
+  height: 35px;
+  width: 20%;
+  box-shadow: -1px -2px 5px #6A994E;
+  border-radius: 50px 20px 10px 10px;
+  background-color: #6A994E;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.chosen-item-bottom .chosen-item-bottom:hover {
+  background-color: white;
+}
+
+.add-button i{
+  font-size: 40px;
+  color: white;
+}
+
+.add-button i:hover{
+  border-radius: 100%;
+  color: #A7C957;
+
+}
+
+.remove-button i {
+  color: white;
+}
+
+.remove-button i:hover {
+  border-radius: 100%;
+  background-color: #A7C957;
+}
+
+button {
+   height: 40px;
+   width: 40px;
+   background: none;
+   border: none;
+}
+
+button:focus{
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+
+

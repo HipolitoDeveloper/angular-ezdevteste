@@ -1,0 +1,52 @@
+<div class="page-container">
+
+  <div class="grid-container" *ngIf="!chosenItem; else chosedItemBox">
+    <mat-grid-list class="grid-content" cols="3" gutterSize="16px">
+      <mat-grid-tile *ngFor="let item of items">
+            <a class="grid-item" (click)="chooseItem(item)">
+
+              <div class="top">
+                <h4 class="title">{{item.title}}</h4>
+              </div>
+              <div class="bottom">
+                <div class="main-information">
+                  <div>{{item.subtitle}}</div>
+                  <div>{{item.date}}</div>
+                </div>
+                <div class="summary-information">{{item.description}}</div>
+              </div>
+            </a>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+
+
+  <ng-template #chosedItemBox>
+    <div class="chosen-item">
+        <div class="chosen-item-content">
+          <div class="chosen-item-title">
+            <button class="remove-button" (click)="removeChosenItem()" type="button">
+              <i class="material-icons">cancel</i>
+            </button>
+            {{this.chosenItem.title}}
+          </div>
+
+          <div class="chosen-item-bottom">
+            <div class="chosen-item-description">
+              {{this.chosenItem.description}}
+            </div>
+
+            <div class="chosen-item-button">
+              <div>
+                <button class="add-button" type="button">
+                  <i class="material-icons">add</i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+  </ng-template>
+
+</div>

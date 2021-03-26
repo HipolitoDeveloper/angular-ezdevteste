@@ -1,0 +1,25 @@
+<div class="page-container">
+  <form [formGroup]="itemCreator" (ngSubmit)="sendForm()">
+    <div class="form-container">
+      <div class="form-container-input">
+        <label>Nome</label>
+        <input formControlName="name"  type="text" placeholder="Digite um nome">
+      </div>
+      <div class="form-container-input">
+        <label>Data</label>
+        <input formControlName="name"  type="date">
+      </div>
+      <div class="form-container-input">
+        <label>Descrição</label>
+        <input formControlName="name"  type="text" placeholder="Digite uma descrição">
+      </div>
+      <div class="form-container-input">
+        <label>Resumo</label>
+        <textarea rows="5" formControlName="name"  type="text" placeholder="Digite um resumo"></textarea>
+      </div>
+
+      <button class="form-container-button" type="submit">Adicionar</button>
+
+    </div>
+  </form>
+</div>
