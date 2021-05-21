@@ -1,4 +1,4 @@
-# Laoyout Ecommerce
+# Layout Ecommerce
 Criação de um Layout Ecommerce
 
 ## Funções
